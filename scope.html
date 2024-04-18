@@ -1,0 +1,17 @@
+<script>
+    
+let y = 5
+{
+    let y = 0
+    console.log('> Existe y antes do bloco? ', y)
+    // se retirar o let desse scope ele vai subir o scope atraz de uma palavra reservada
+    // da errado se for um const no y = 5
+}
+
+console.log('> Existe y depois do bloco? ', y)
+// esse console.log vai dar erro porque para o java o let y = 0 esta em um scope diferente
+// {
+//   Isso aqui é um scope  
+// }
+
+</script>

@@ -1,0 +1,76 @@
+<!--
+    Formulários
+
+    Para que serve?
+    - Capturar dados de entrada (input)
+    - Interação
+    - Controle
+
+    Pré requisitos
+    - Básico HTML
+
+    Dominar
+    - Estilização
+    - Validação
+    - Controles customizados
+    - Jaascript
+-->
+<!--
+    <Form>
+    - Elemento que definirá um Formulários
+    - É um container estilo <section> <footer>
+        
+    Atributos básicos
+    - action
+    - method
+
+    Não crie um Form dentro de outro Form
+-->
+
+<form action="" method="GET">
+<!-- http://minhapagine.com.bt/?name=Joao&email=joao@joao.com-->
+
+</form>
+
+<form action="" method="POST">
+   
+</form>
+
+<!--
+    <fieldset>
+    - Agrupamento de campos
+    - mesmo propósito
+    - semântico
+    - acessibilidade
+    
+    Atributos especiais
+    - disabled
+        - desabilita todos os elementos internos
+        - não precisa estar dentro do formulário
+    - form
+        - o id de um formulário ao qual esse fieldset pertence
+        - não precisa estar dentro do formulário
+    - name
+        - nome do grupo
+        
+    <legend>
+    -nome do agrupamento
+    - primeiro elemento dentro do fieldset        
+--> 
+<form action="">
+    <fieldset><!-- Se colocar um disable na frente do fieldset(<fieldset disable>) vai desabilitar o input-->
+        <legend>EAE GAY TA TÃO SÉRIO POR QUE?</legend>
+
+        <label for="">Argumento</label>
+        <input type="text">
+    </fieldset>
+</form>  
+
+<form id="Olhe aqui" action=""></form>
+
+<fieldset form="Olhe aqui" name="Não corra não">
+    <legend>EAE GAY TA TÃO SÉRIO POR QUE?</legend>
+
+    <label for="">Argumento</label>
+    <input type="text">
+</fieldset>

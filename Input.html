@@ -1,0 +1,129 @@
+<!--
+    <input>
+    - Um dos mais usados em formulários
+    - Aceita os mais diversos tipos de dados
+    - Um dos mais poderosos e complexos
+    - Elevado número de combinações
+
+    Atributos
+    - type
+    - name
+    - id
+-->
+<input type="date">
+<input type="email">
+<input type="number">
+<input type="password">
+<input type="file">
+
+<!-- <input> Atributos comuns
+    - autocomplete
+    - autofocus
+    - disabled
+    - readonly (quase todos)
+    - value
+    - form (quase todos)
+    - name
+    - required (quase todos)
+    - placeholder (password, search,
+    tel, text, url)(quase todos)
+-->
+<input type="type"value="texto"disabled>
+<input type="type"value="texto"readonly>
+
+<input type="email" required>
+<form id="meu-form"></form>
+<input name="email" type="email" form="meu form">
+
+<label for="email">email</label>
+<input id="email" type="email" placeholder="Digite seu email">
+<input type="password" placeholder="Digite sua senha">
+
+<!--
+    <input type="radio">
+
+    -projetado para selecionar uma única opção de um grupo
+    de opções
+
+    Atributos essenciais
+    -cheked
+       indica que o campo foi marcado
+    -value
+       valor que aquele campo contém
+-->
+
+<fieldset>
+    <legend>Bora tomar um café?</legend>
+
+    <label for="yep">sim</label>
+    <input type="radio" id="yep" name="coffee" value="yes">
+
+    <label for="nono">não</label>
+    <input type="radio" id="nono" name="coffe" value="no">
+
+</fieldset>
+
+<!--
+    <input type="search" />
+
+    -para campos de busca
+    -é igual ao campo do tipo 'text' mas poderá ser pouco diferente
+    dependendo do user agent
+
+    #atributos
+    -list / <datalist>
+    -pattern
+    -aria-label    
+-->
+<datalist id="searchterms">
+    <option>Win</option>
+    <option>Mac</option>
+    <option>Linux</option>
+</datalist>
+
+<form action="">
+    <input type="search" name="q" list="searchterm"
+    placeholder="Digite aqui" size="30"
+    aria-label="Campo de pesquisa: Digite aqui">
+    <button>search</button>
+</form>
+
+<!--
+    <input type="number" />
+
+    -entrada de números
+
+    #atributos
+    -min/max
+    -step
+-->
+<form action="">
+    <input type="number" placeholder="Números apenas" value="100" min="5" max="500">
+    <button>Send</button>
+</form>
+
+<!--
+    <input type="range">
+    
+    -controle para selecionar um valor numérico
+    -slider ou dial control
+
+    #atributos
+
+    -min/max
+    -step
+-->
+
+<input type="range" min="1" max="100"
+value="50" step="1">
+
+<!-- 
+    Campos interessantes(mas não possuem um bom suporte)
+
+    Ficar de olho em https://caniuse.com
+-->
+
+<input type="date" value="2022-10-15">
+
+<input type="datetime-local">
+<!-- horas,dias,semana,mês etc-->

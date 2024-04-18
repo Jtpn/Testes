@@ -1,0 +1,152 @@
+Hypertex Markup Language
+HTML
+
+<!--
+ Isso é para deixar comentarios   
+-->
+Detalhe comentarios não aparece no texto
+
+<!--
+    Abertura de tag
+    Fechamento de tag
+    conteúdo
+    Elementos
+-->
+
+<h1>
+    Isso aqui é uma Tag fica grande no texto
+</h1>
+
+<!-- Elementos Vazios -->
+<img src="" alt="">
+<input type="text">
+
+<!--   
+    Atributos HTML
+    informação extra
+    configuração 
+-->
+
+<!--
+    Atributos booleanos
+     booleanos ele é verdadeiro ou falso
+     não precisam de contéudo
+-->
+<input type="text" disabled>
+
+<!--
+    Aspas
+     omissão
+     simples
+     duplas
+-->
+
+Usar "" e não ''
+
+<!--
+    Atributos globais
+     class-
+     contenteditable-alterar o que esta escrito sem ser no codigo
+     data-*
+     hidden
+     id
+     style-muda a cor
+     tabindex
+     title
+
+-->
+<div Class="carrinho">
+    <!-- Elementos aqui dentro com o contenteditable 
+        o que estiver escrito pode ser alterado no preview
+        porem quando salvar a alteração sera desfeita-->
+</div>
+
+<div Class="carrinho">
+    <!-- Elementos aqui dentro com o id não deve ser colocada
+        em outra tag porque eles vão se repetir então no lugar
+        de usar id sera usado o class para não repetir-->
+</div>
+
+<div Class="carrinho">
+    <!-- Elementos aqui dentro-->
+</div>
+
+ pode dar ctrl c ctrl v
+
+ <div class="carrinho" contenteditable="true" id="mame1"> 
+      conteudo
+ </div>     
+
+ <div class="carrinho" data-id="" id="name2" style="color: red">
+    conteudo
+<div>     
+
+<div class="carrinho">
+    conteudo
+</div>     
+
+<!--
+    <p></p>
+    é para parágrafo
+    e começou com o <p> tem que ser fechado com o </p>
+-->
+<p>
+    vou <em>escrever um parágrafo</em>
+</p>ainda se eu tivesse texto aqui
+
+
+<script>
+    // Variáveis e tipos de dados
+    // Declaração or declaration
+    var name
+
+    // Assignment or atribuição de valores
+    name = "João"
+
+    //que tipo de dado foi colocado na variável
+
+    console.log(name)
+
+    // Agrupamento de declarações
+    
+    let age,isHuman
+    
+    age = 21
+    isHuman = true
+
+    // console.log(name age isHuman) nem tente fazer assim
+    // console.log(name, age, isHuman) se tem virgula da certo
+
+    //multiplos argumentos na função
+    console.log('O ' + name + 'tem' + age + 'anos')
+</script>
+
+
+<script>
+const person = {
+    name: 'Joao',
+    age: 30,
+    weight: 8000,
+    isAdimin: true
+    
+}
+
+console.log(`${person.name} tem ${person.age} anos 
+e pesa mais de ${person.weight}`)
+
+</script>
+
+<script>
+ // Array
+
+ const animals = [
+    'Lion' ,
+    'Monkey' ,
+    {
+     name: 'Cat' ,
+     age: 5
+    }
+]
+
+ console.log(animals[3])
+</script>

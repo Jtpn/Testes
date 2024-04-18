@@ -1,0 +1,13 @@
+<script>
+    // var é global e, também local
+
+    console.log('> existe x antes do bloco? ', x) 
+    //não porque o var x não foi definido ainda
+
+    {
+        var x = 0
+    }
+
+    console.log('> existe x depois do bloco? ', x)
+    //Sim porque o var x foi definido como 0
+</script>

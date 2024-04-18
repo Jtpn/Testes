@@ -1,0 +1,166 @@
+<!--1
+    Semântica
+
+    -Dar significado
+    -Elementos semânticos
+-->
+
+<!--2
+    Cabeçalhos e parágrafos
+
+    Exemplo
+-->
+
+Sobre mim
+lalalalala
+
+Nascimento
+**/**/****
+
+Trabalho
+Ser chato
+
+Saiba mais
+<!-- Não fazer assim -->
+
+<h1>Sobre mim</h1>
+lalalalala
+
+<h2>Nascimento</h2>
+**/**/****
+
+<h2>Trabalho</h2>
+Ser chato
+
+<a href="">Saiba mais</a>
+<!-- Fassa assim pois dessa maneira vai ter paragrafos no texto 
+     Se o texto estiver grande demais lembre de usar <p></p> para
+     criar paragrafos
+-->
+
+<!-- 3
+    Listas
+
+    -ordenadas
+    -não ordenadas (é so tirar o h2 e os l1)
+    Se colocar * na frente de uma tag e um número ele
+    vai multiplicar
+    ol vai deixar numéros em cada paragrafo
+    ul vai deixar pontos em cada paragrafo
+-->
+
+<h1>Suco detox</h1>
+<h2>Ingredientes</h2>
+
+<ul>
+   <li>3 folhas de couve</li>
+   <li>1 laranja</li>
+   <li>1 pedacinho de gengibre</li>
+   <li>300 ml de água</li>
+   <li>Adoçante a gosto</li>
+   <li>Gelo a gosto</li>
+</ul>
+
+<!-- 4
+     Citações
+     <blockquote>
+     <cite>
+     <q>        
+-->
+
+<blockquote cite="htps://develope.mozilla.org/en-US/docs/
+Web/HTML/Element/blockquote">
+    O <strong>Elemento HTML <code>&lt;blockquote&gt;</code>
+    </strong> (ou <em>HTML Block
+    Quotation Element</em>) indica que um texto externo foi
+    citado
+</blockquote>
+
+<p>De acordo com <a href="https://developer.mozilla.org/
+en-US/docs/Web/HTML/Element/blockquote">
+    <cite>página MDN blockquote</cite></a>:
+</p>
+
+<p>O elemento quote - <code>&lt;q&gt;</code> - é <q
+cite="https://developer.mozilla.org/en-US/docs/Web/HTML/
+Element/q">usado para citações curtas que não precisam de
+parágrafos ou quebras de linha</q> -- <a href="https://
+developer.mozilla.org/en-US/docs/Web/HTML/Element/q">
+<cite>MDN q page</cite></a></p>
+
+<!-- 5
+    Abreviações
+    <abbr>
+-->
+
+<p>Usamos <abbr title="Hypertext Markup
+    Language">HTML</abbr> para estruturar nossos
+documentos da web.</p>
+
+<!-- 6
+    Detalhes de contato
+    <address>
+-->
+
+<address>
+    <p>Mayk Brito <br>
+    <strong>Campo Grande, MS</strong>
+    </p>
+</address>
+
+<!-- 7
+    Lista de descrição
+    <dl>
+        <dt></dt>
+        <dd></dd>
+    </dl>    
+-->
+
+<h2>Glossário</h2>
+<dl>
+    <dt>Hypertext</dt>
+    <dd>É um hiper texto com possibilidades...</dd>
+
+    <dt>Markup</dt>
+    <dd>Marcação de texto</dd>
+
+    <dt>Language</dt>
+    <dd>Línguagem com sua semântica e sintaxe...</dd>
+</dl>
+
+<!-- 8
+    Represemtamdo código de computador
+    <code>
+        Partes genéricas de código
+
+    <pre>
+        Blocos de código, pois essa tag mantém os espaços em
+        brancos e recuos que eu colocar no meu código    
+-->
+<pre>
+    <code>
+    documento
+        .querySelector("body")   
+    </code>
+</pre>
+<!-- <xmp> vai parar de ser usado então nem use-->
+
+
+<!-- 9
+    Elementos genéricos
+
+    *<div>
+    *<span>    
+-->
+
+<div>
+    Um texto qualquer
+</div>
+
+<spna>Outro </spna> <span>Texto</span>
+
+
+<div class="cart">
+    <span>Camiseta</span>
+    <span>R$ 99,00</span>
+</div>

@@ -1,0 +1,232 @@
+<!--
+    <table>
+
+    Prós
+    - Visualização de dados via linhas e colunas
+    - Boa acessibilidade para leitura de dados
+    
+    
+    Contras
+    - Pouco flexível
+    -Precisa de estilização para melhor visualização
+
+    Não usar
+    - Para criar seu layout
+-->
+
+<!-- Tabela básica -->
+
+<table>
+    <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+    </tr>
+    <tr>
+        <td>João</td>
+        <td>21</td>
+    </tr>
+    <tr>
+        <td>Kalyano</td>
+        <td>21</td>
+    </tr>
+</table>
+
+<!-- Organizando Tabelas -->
+
+<table>
+
+    <Caption>Pessoas por idade</Caption>
+
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>João</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>Kalyano</td>
+            <td>21</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+         <tr>
+             <td>Total:</td>
+             <td>2 Pessoas</td>
+         </tr>
+    </tfoot>
+    
+    
+</table>
+
+<!-- Tabelas complexa -->
+<!--
+    2 Lojas
+        Quantos produtos foram produzido, quantos
+        vendidos e agrupado por nome dos produtos
+        rowspan="2" vai ocupar 2 colunas
+-->
+
+<table>
+
+    <caption>Produzidos x vendidos por loja</caption>
+
+    <thead>
+        <tr>
+        <th rowspan="2"></th>
+        <th colspan="2">Padaria do Zé</th>
+        <th colspan="2">Mária comunista</th>
+        </tr>
+
+        <tr>
+            <th>Produzidos</th>
+            <th>Vendidos</th>
+            <th>Produzidos</th>
+            <th>Vendidos</th>
+        </tr>
+    </thead>
+
+</table>
+
+<!-- TBody complexo -->
+
+<table>
+
+    <caption>Produzidos x vendidos por loja</caption>
+
+    <thead>
+        <tr>
+        <th rowspan="2"></th>
+        <th colspan="2">Padaria do Zé</th>
+        <th colspan="2">Mária comunista</th>
+        </tr>
+
+        <tr>
+            <th>Produzidos</th>
+            <th>Vendidos</th>
+            <th>Produzidos</th>
+            <th>Vendidos</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th>Pão</th>
+            <td>50</td>
+            <td>30</td>
+            <td>25</td>
+            <td>25</td>
+        </tr>
+
+        <tr>
+            <th>Bolo</th>
+            <td>15</td>
+            <td>7</td>
+            <td>12</td>
+            <td>6</td>
+        </tr>
+    </tbody>
+
+</table>
+
+<!-- Mehlorando aspecto com colgroup -->
+
+<table>
+
+    <caption>Produzidos x vendidos por loja</caption>
+    
+
+    <colgroup>
+        <col>
+        <col span="2" style="background-color:blue">
+        <col span="2" style="background-color:red">
+    </colgroup>
+
+    <thead>
+        <tr>
+        <th rowspan="2"></th>
+        <th colspan="2">Padaria do Zé</th>
+        <th colspan="2">Mária comunista</th>
+        </tr>
+
+        <tr>
+            <th>Produzidos</th>
+            <th>Vendidos</th>
+            <th>Produzidos</th>
+            <th>Vendidos</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th>Pão</th>
+            <td>50</td>
+            <td>30</td>
+            <td>25</td>
+            <td>25</td>
+        </tr>
+
+        <tr>
+            <th>Bolo</th>
+            <td>15</td>
+            <td>7</td>
+            <td>12</td>
+            <td>6</td>
+        </tr>
+    </tbody>
+
+</table>
+
+<!-- Melhorando acessibilidade -->
+
+<table>
+
+    <caption>Produzidos x vendidos por loja</caption>
+    
+
+    <colgroup>
+        <col>
+        <col span="2" style="background-color:blue">
+        <col span="2" style="background-color:red">
+    </colgroup>
+
+    <thead>
+        <tr>
+        <th rowspan="2"></th>
+        <th colspan="2" scope="colgroup">Padaria do Zé</th>
+        <th colspan="2" scope="colgroup">Mária comunista</th>
+        </tr>
+
+        <tr>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th scope="row">Pão</th>
+            <td>50</td>
+            <td>30</td>
+            <td>25</td>
+            <td>25</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Bolo</th>
+            <td>15</td>
+            <td>7</td>
+            <td>12</td>
+            <td>6</td>
+        </tr>
+    </tbody>
+
+</table>
